@@ -1,0 +1,16 @@
+const shortcuts = [
+  { command: '/BOX', message: 'Para ganhar premiações' },
+  { command: 'K', message: 'Celular' },
+  { command: '"', message: 'Inventário' },
+  { command: 'E', message: 'Interagir' },
+  { command: 'T', message: 'Chat' },
+  { command: 'F6', message: 'Cancelar animações' },
+  { command: 'F', message: 'Entrar em veículos' },
+  { command: 'G', message: 'Veículo / Colocar cinto' },
+  { command: 'H', message: 'Veículo / Ligar luzes' },
+  { command: 'Z', message: 'Veículo / Ligar motor' },
+  { command: 'L', message: 'Veículo / Alarme' },
+  { command: 'HOME', message: 'Altura do VOIP' },
+  { command: '/FPS ON', message: 'Melhorar seu FPS' },
+  { command: 'U', message: 'Desativar Atalhos' },
+]

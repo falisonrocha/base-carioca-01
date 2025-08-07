@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css" />
+
+  <title>pedrosilvx</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <header>
+      <div class="title">
+        <img src="./assets/images/title.png">
+        <!-- <img src="./assets/icons/close.svg" id="close" onclick="App.close()"> -->
+      </div>
+      <div class="categories">
+        <button class="selected" onclick="App.selectCategory(this, 'head')">
+          <img src="./assets/icons/head.svg">
+        </button>
+        <button onclick="App.selectCategory(this, 'torso')">
+          <img src="./assets/icons/body.svg">
+        </button>
+        <button onclick="App.selectCategory(this, 'leftarm')">
+          <img src="./assets/icons/leftarm.svg">
+        </button>
+        <button onclick="App.selectCategory(this, 'rightarm')">
+          <img src="./assets/icons/rightarm.svg">
+        </button>
+        <button onclick="App.selectCategory(this, 'leftleg')">
+          <img src="./assets/icons/leftleg.svg">
+        </button>
+        <button onclick="App.selectCategory(this, 'rightleg')">
+          <img src="./assets/icons/rightleg.svg">
+        </button>
+      </div>
+      <svg width="180" height="2" viewBox="0 0 180 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="180" height="2" fill="url(#paint0_linear_702_996)" />
+        <defs>
+          <linearGradient id="paint0_linear_702_996" x1="0" y1="1" x2="180" y2="1" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF0000" stop-opacity="0" />
+            <stop offset="0.504967" stop-color="#FF0000" />
+            <stop offset="1" stop-color="#FF0000" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+    </header>
+    <main>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo selected">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo selected">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo selected">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+      <div class="tattoo selected">
+        <img src="./assets/images/check.png">
+        <div class="image"></div>
+        <div class="number">1</div>
+      </div>
+    </main>
+    <footer>
+      <button onclick="App.buyTattoos()">
+        SALVAR
+      </button>
+      <button onclick="App.clearItems()">
+        <svg style="margin-top: 4px;" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.39896 6.95713C8.05311 6.60013 7.48333 6.59108 7.12632 6.93693C6.76932 7.28278 6.76027 7.85256 7.10612 8.20957L11.7469 13L7.10612 17.7905C6.76027 18.1475 6.76932 18.7173 7.12632 19.0631C7.48333 19.4089 8.05311 19.3999 8.39896 19.0429L12.9999 14.2935L17.6009 19.0429C17.9468 19.3999 18.5165 19.4089 18.8735 19.0631C19.2306 18.7173 19.2396 18.1475 18.8937 17.7905L14.253 13L18.8937 8.20957C19.2396 7.85256 19.2306 7.28278 18.8735 6.93693C18.5165 6.59108 17.9468 6.60013 17.6009 6.95713L12.9999 11.7065L8.39896 6.95713Z"
+            fill="white" fill-opacity="0.45" />
+        </svg>
+      </button>
+    </footer>
+  </div>
+
+  <div id="cams">
+    <div class="icon">
+      <img src="./assets/icons/cam.svg">
+    </div>
+    <div class="content">
+      <svg data-value="1" class="set-camera" width="32" height="20" viewBox="0 0 32 20" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M25.416 10.3734C24.556 12.2706 21.096 14.5692 16 14.5692C10.936 14.5692 7.334 12.2996 6.576 10.4045C2.75 10.5824 0 12.9492 0 14.3561C0 16.6898 7.162 20 16 20C24.836 20 32 16.6898 32 14.3561C32 12.9306 29.25 11.1141 25.416 10.3734Z"
+          fill="white" fill-opacity="0.2" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M20.154 0C19.122 0 16.99 0.732388 16.024 0.732388C15.058 0.732388 12.926 0 11.896 0C9.66799 0 8.27599 2.83852 8.08199 3.92469L8.04199 8.94589C9.16599 9.99275 11.264 11.3086 13.564 11.5072C14.364 11.5755 15.208 11.6168 16.086 11.6168C16.96 11.6168 17.802 11.5755 18.604 11.5072C20.904 11.3065 22.752 10.1541 23.94 8.98106L23.93 3.98883C23.758 2.85921 22.362 0 20.154 0Z"
+          fill="white" fill-opacity="0.2" />
+      </svg>
+      <svg data-value="2" class="set-camera" width="22" height="26" viewBox="0 0 22 26" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.2564 15.0956C13.3938 13.6338 13.356 12.3894 12.6697 11.2449C12.3543 10.7187 11.9895 10.2158 11.716 9.67144C11.4149 9.06882 11.1576 8.44753 10.9458 7.8119C10.7727 7.29284 10.9609 6.91911 11.4329 6.61805C12.5123 5.92965 13.6549 5.36452 14.9446 5.13029C15.3592 5.061 15.7815 5.04246 16.2012 5.07514C16.7426 5.11082 16.9302 5.41577 16.7715 5.91083C16.6986 6.13792 16.599 6.35722 16.5296 6.58496C16.0102 8.30306 16.9418 9.91734 18.8182 10.5584C19.5369 10.8043 20.2611 11.0398 20.9736 11.2987C21.173 11.3801 21.3583 11.4895 21.5232 11.6231C22.0426 12.0202 22.1148 12.3102 21.8502 12.887C21.2662 14.1581 20.7723 15.4544 20.5771 16.8378C20.3449 18.4799 20.6664 20.0358 21.3446 21.5489C21.6881 22.3152 21.9767 23.1061 21.8887 23.9625C21.8063 24.7716 21.1247 25.3724 20.2927 25.2887C19.8958 25.2524 19.5111 25.1394 19.1624 24.9565C17.6323 24.1196 16.465 22.9101 15.3746 21.6151C13.7099 19.6374 13.2337 17.3451 13.2564 15.0956ZM15.677 13.7435L18.8113 14.2626L19.1549 13.2822C17.9903 12.9214 16.8443 12.6917 15.6124 12.7294C15.6371 13.1128 15.6584 13.4548 15.677 13.7435ZM18.3565 16.0974C18.4177 15.7828 18.4843 15.4389 18.5537 15.0801C17.5849 14.7894 16.6423 14.6441 15.6481 14.7368V15.7341L18.3565 16.0974ZM15.9312 17.7098L18.2102 18.0582V16.9766C17.4214 16.7073 16.2644 16.5873 15.7161 16.7229L15.9312 17.7098ZM18.2363 18.9536L16.228 18.611L16.1545 18.7148L16.6437 19.7718L18.4589 20.1299C18.3854 19.7244 18.3174 19.3656 18.2397 18.9536H18.2363Z"
+          fill="white" fill-opacity="0.2" />
+        <path
+          d="M6.16658 0C7.21573 0.0583946 8.13502 0.347121 9.00828 0.760425C9.53869 1.01087 10.0485 1.30285 10.5514 1.6039C11.0544 1.90496 11.1732 2.26831 11.0599 2.82435C10.8929 3.64577 10.4752 4.36402 10.0492 5.07903C9.88636 5.35219 9.71322 5.6195 9.53252 5.88163C9.46756 5.98043 9.37999 6.06424 9.27624 6.12689C7.92616 6.86915 7.52696 7.82423 7.99485 9.24127C8.10341 9.57022 8.19341 9.92059 8.3851 10.2054C8.7678 10.7757 8.72865 11.3655 8.62353 11.9826C8.42085 13.1829 8.15426 14.3735 7.46788 15.4155C6.24696 17.2699 4.76358 18.9075 2.72711 20.0092C1.77415 20.5244 0.468723 20.4031 0.166414 19.1774C0.0716199 18.7876 0.0770371 18.382 0.182215 17.9946C0.425437 17.1511 0.762786 16.3382 1.05754 15.5109C1.59437 14.0398 1.65796 12.4516 1.24029 10.9464C0.955846 9.90827 0.536048 8.89869 0.140984 7.88716C-0.0939928 7.27921 -0.0740685 6.97426 0.501007 6.60962C0.948975 6.32543 1.46291 6.12948 1.96721 5.92964C2.61787 5.67011 3.32279 5.5131 3.93566 5.19517C5.37437 4.44837 5.95564 2.85938 5.40599 1.40082C5.34072 1.22823 5.26858 1.05694 5.21705 0.881756C5.07963 0.41979 5.22186 0.188164 5.71723 0.0687796C5.86552 0.0378581 6.01554 0.0148922 6.16658 0ZM6.38919 7.67305C5.14285 7.699 3.98444 7.86121 2.84185 8.25699C2.97308 8.61709 3.09332 8.94864 3.19157 9.2192L6.31979 8.71247C6.33972 8.41725 6.36239 8.07662 6.38919 7.67305ZM3.64434 11.0573L6.34864 10.705V9.6896C5.33934 9.60071 4.39805 9.76033 3.43684 10.0432C3.51242 10.4105 3.5825 10.7543 3.64434 11.0573ZM3.79138 13.0207L6.07038 12.6619C6.13359 12.3595 6.2078 12.0176 6.28613 11.6328C5.44281 11.5889 4.59797 11.6876 3.79138 11.9242V13.0207ZM5.84158 13.6734L5.77287 13.5702L3.7529 13.9213L3.54059 15.1008L5.36132 14.7265L5.84158 13.6734Z"
+          fill="white" fill-opacity="0.2" />
+        <path
+          d="M9.71459 7.27272C9.71115 8.70663 10.4085 9.90113 11.1911 11.0424C11.9407 12.1357 12.2135 13.2913 12.1193 14.5818C11.885 17.785 12.7927 20.6425 15.0936 23.0704C16.138 24.1734 17.2414 25.1953 18.6052 25.9609C18.2548 26.0628 17.7375 25.9609 17.2806 25.7085C16.3919 25.213 15.5842 24.5982 14.8827 23.8834C13.8452 22.8452 12.8469 21.7682 12.2478 20.4323C11.492 18.7453 11.2316 16.9785 11.4062 15.1664C11.5436 13.7318 11.1519 12.4562 10.3446 11.2617C9.82108 10.487 9.34839 9.68636 9.08731 8.78968C8.86126 8.01627 9.03439 7.56858 9.71459 7.27272Z"
+          fill="white" fill-opacity="0.2" />
+        <path
+          d="M9.73383 12.5412C10.1378 13.3159 10.3206 13.9836 10.0341 14.766C9.48098 16.2785 8.45862 17.4827 7.3545 18.6389C6.56919 19.4597 5.68768 20.1792 4.66189 20.7275C4.2888 20.931 3.8586 21.0216 3.4293 20.987C6.53896 18.8673 9.04332 16.3615 9.73383 12.5412Z"
+          fill="white" fill-opacity="0.2" />
+        <path
+          d="M11.3333 5.35608C11.3445 5.26464 11.3676 5.17486 11.402 5.08877C11.883 4.20376 12.309 3.30319 12.2801 2.2722C12.9184 2.49345 13.1307 2.9632 12.9397 3.69962C12.9349 3.72038 12.9205 3.7392 12.917 3.75997C12.8002 4.39387 12.4958 4.88049 11.8026 5.09006C11.6329 5.14132 11.4858 5.25876 11.3285 5.3457L11.3333 5.35608Z"
+          fill="white" fill-opacity="0.2" />
+        <path d="M11.3271 5.34765H11.3079L11.3326 5.35738L11.3271 5.34765Z" fill="white" fill-opacity="0.2" />
+      </svg>
+      <svg data-value="3" class="set-camera" width="30" height="26" viewBox="0 0 30 26" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M6.08301 1.30018C6.88023 0.488539 7.96148 0.0325653 9.08891 0.0325653C10.2066 0.0325653 11.8483 -0.284194 12.3498 1.05811C12.7569 2.14759 13.7919 2.91784 15 2.91784C16.2082 2.91784 17.243 2.14759 17.6501 1.05811C18.1517 -0.284194 19.7933 0.0325653 20.911 0.0325653C22.0385 0.0325653 23.1199 0.488539 23.9171 1.30018L29.17 6.64819C30.2767 7.77496 30.2767 9.60182 29.17 10.7285L27.0762 12.8602C26.339 13.6108 25.3104 13.8543 24.3835 13.6192L24.7684 21.456C24.8898 23.9279 22.9539 26 20.5228 26H9.47727C7.04615 26 5.11018 23.9281 5.23158 21.456L5.61647 13.6192C4.68958 13.8543 3.661 13.6108 2.9238 12.8602L0.830058 10.7285C-0.276686 9.60182 -0.276686 7.77496 0.830058 6.64819L6.08301 1.30018Z"
+          fill="white" fill-opacity="0.2" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <div>
+      <span>
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.4688 6.87501C12.3107 5.66922 11.7186 4.56237 10.8033 3.76165C9.88804 2.96092 8.7123 2.52123 7.49621 2.52486C6.28011 2.5285 5.10703 2.97522 4.19655 3.7814C3.28606 4.58758 2.70061 5.69796 2.54977 6.90467C2.39893 8.11138 2.69305 9.3317 3.37707 10.3372C4.06109 11.3427 5.08812 12.0644 6.2659 12.3673C7.44369 12.6702 8.69148 12.5334 9.7757 11.9826C10.8599 11.4318 11.7063 10.5048 12.1563 9.37501M12.4688 12.5V9.37501H9.34375"
+            stroke="#840D0D" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>0º</p>
+      </span>
+      <input type="range" step="1" min="0" max="360" value="0" class="slider" id="myRange" oninput="App.rotate(this)" />
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/networkStatus.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

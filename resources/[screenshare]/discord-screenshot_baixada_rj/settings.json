@@ -1,0 +1,11 @@
+{
+    "webhookUrl": "https://discord.com/api/webhooks/1261797809364008970/2TBgulFfrGa7nYrpzwzX3w7wfMfNJa1GU4gfR3OKRI372ZyO4AS9I9AoqIOiLJuIfltr",
+    "framework": "vrp",
+    "commandName": "ss",
+    "commandPermission": "ac.permissao",
+    "hiddenIdentifiers": [],
+    "screenshotOptions": {
+        "encoding": "jpg",
+        "quality": 0.92
+    }
+}

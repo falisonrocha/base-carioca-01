@@ -1,0 +1,219 @@
+.notify.admin {
+  --color-primary: #F6232F;
+
+  border: 1.5px solid var(--color-primary);
+  background: linear-gradient(309deg, rgba(0, 0, 0, 0.00) 0%, rgba(246, 0, 30, 0.20) 84.53%), rgba(0, 0, 0, 0.66);
+}
+
+.notify.admin .title::before {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  left: 6px;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translateY(-50%);
+
+  background: url(./icons/bell.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.notify.success {
+  --color-primary: #02C82D;
+
+  border: 1.5px solid var(--color-primary);
+  background: linear-gradient(309deg, rgba(0, 0, 0, 0.00) 0%, rgba(221, 220, 220, 0.20) 84.53%), rgba(0, 0, 0, 0.66);
+}
+
+.notify.success .title::before {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  left: 6px;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translateY(-50%);
+
+  background: url(./icons/success.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.notify.refused {
+  --color-primary: #FF0000;
+
+  border: 1.5px solid var(--color-primary);
+  background: linear-gradient(309deg, rgba(0, 0, 0, 0.00) 0%, rgba(221, 220, 220, 0.20) 84.53%), rgba(0, 0, 0, 0.66);
+}
+
+.notify.refused .title::before {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  left: 6px;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translateY(-50%);
+
+  background: url(./icons/refused.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.notify.important {
+  --color-primary: #E7E7E7;
+
+  border: 1.5px solid var(--color-primary);
+  background: linear-gradient(309deg, rgba(0, 0, 0, 0.00) 0%, rgba(221, 220, 220, 0.20) 84.53%), rgba(0, 0, 0, 0.66);
+}
+
+.notify.important > div {
+  color: #525252;
+}
+
+.notify.important .title::before {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  left: 6px;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translateY(-50%);
+
+  background: url(./icons/bell-gray.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.notify.vip {
+  --color-primary: #FFD700;
+
+  border: 1.5px solid var(--color-primary);
+  background: linear-gradient(309deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 84.53%), rgba(0, 0, 0, 0.66);
+}
+
+.notify.vip .title::before {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  left: 6px;
+
+  width: 17px;
+  height: 17px;
+
+  transform: translateY(-50%);
+
+  background: url(./icons/bell-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.announce.police {
+  --color-primary: #2C64BD;
+
+  background: linear-gradient(263deg, rgba(44, 100, 189, 0.00) 30%, rgba(44, 100, 189, 0.40) 100%), rgba(0, 0, 0, 0.40)
+}
+
+.announce.hospital {
+  --color-primary: #FFFFFF;
+
+  background: linear-gradient(263deg, rgba(198, 198, 198, 0.00) 0%, rgba(255, 0, 0, 0.40) 100%), rgba(0, 0, 0, 0.22);
+}
+
+.announce.mechanic {
+  --color-primary: #FF4C00;
+
+  background: linear-gradient(263deg, rgba(198, 198, 198, 0.00) 30%, rgba(255, 76, 0, 0.40) 100%), rgba(0, 0, 0, 0.40);
+}
+
+.announce.kids {
+  --color-primary: #C6C6C6;
+
+  background: linear-gradient(263deg, rgba(255, 243, 201, 0.13) 0%, rgba(241, 203, 66, 0.40) 100%), rgba(0, 0, 0, 0.22);
+}
+
+.announce.party {
+  --color-primary: #C6C6C6;
+
+  animation: rainbow-bg 3s linear;
+	animation-iteration-count: infinite;
+}
+
+.announce.judiciary {
+  --color-primary: #C6C6C6;
+
+  background: linear-gradient(263deg, rgba(255, 243, 201, 0.13) 0%, rgba(0, 0, 0, 0.40) 100%), rgba(0, 0, 0, 0.22);
+}
+
+.announce.firedepartment {
+  --color-primary: #C6C6C6;
+
+  background: linear-gradient(263deg, rgba(255, 243, 201, 0.13) 0%, rgba(0, 0, 0, 0.40) 100%), rgba(0, 0, 0, 0.22);
+}
+
+@keyframes rainbow-bg {
+  100%,0% {
+    background-color: rgba(255,0,0,0.7);
+  }
+  8% {
+    background-color: rgba(255,127,0,0.7);
+  }
+  16%{
+    background-color: rgba(255,255,0,0.7);
+  }
+  25%{
+    background-color: rgba(127,255,0,0.7);
+  }
+  33%{
+    background-color: rgba(0,255,0,0.7);
+  }
+  71%{
+    background-color: rgba(0,255,127,0.7);
+  }
+  50%{
+    background-color: rgba(0,255,255,0.7);
+  }
+  58%{
+    background-color: rgba(0,127,255,0.7);
+  }
+  66%{
+    background-color: rgba(0,0,255,0.7);
+  }
+  75%{
+    background-color: rgba(127,0,255,0.7);
+  }
+  83%{
+    background-color: rgba(255,0,255,0.7);
+  }
+  91%{
+    background-color: rgba(255,0,127,0.7);
+  }
+}
+
+.logo {
+  height: 100% !important;
+  max-height: 4rem;
+}
+.cupom {
+  height: 5rem;
+  /* display: none; */
+}

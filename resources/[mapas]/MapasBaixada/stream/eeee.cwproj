@@ -1,0 +1,25 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>nt_qg_barco.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>nt_qg_barco.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames>
+    <Item>nt_qg_barco_col.ybn</Item>
+  </YbnFilenames>
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames>
+    <Item>nt_qg_barco_shell.ydr</Item>
+    <Item>po1_01_tug_det.ydr</Item>
+  </YdrFilenames>
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames />
+</CodeWalkerProject>

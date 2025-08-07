@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+}
+
+#app {
+  top: 50%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  position: absolute;
+
+  width: 26.25rem;
+  height: 56rem;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.625rem;
+  border: 1px solid #f00;
+  background: rgba(0, 0, 0, 0.71);
+
+  padding: 0 1rem;
+  padding-top: 2rem;
+}
+
+#app header {
+  width: 24.25rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#app header svg {
+  margin-top: 1rem;
+}
+
+#app header .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.5rem;
+}
+
+#app header .title img {
+  width: 17.4375rem;
+}
+
+#app header .title img#close {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#app header .categories {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+#app header .categories button {
+  width: 16.6%;
+  height: 2.1875rem;
+
+  background-color: transparent;
+  border: none;
+
+  opacity: 0.5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+#app header .categories button img {
+  opacity: 0.45;
+  height: 1.3125rem;
+}
+
+#app header .categories button.selected {
+  opacity: 1;
+}
+
+#app header .categories button.selected img {
+  opacity: 1;
+}
+
+#app main {
+  gap: 0.62rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  width: 101%;
+  height: 35.1875rem;
+  max-height: 35.1875rem;
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+  margin-bottom: 1.13rem;
+}
+
+#app main .tattoo {
+  width: 5.34375rem;
+  height: 6.25rem;
+  border-radius: 0.25rem;
+  background: rgba(238, 49, 59, 0.25);
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+#app main .tattoo img {
+  top: 0.31rem;
+  right: -0.1rem;
+  position: absolute;
+
+  width: 2.525rem;
+
+  display: none;
+}
+
+#app main .tattoo .image {
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://media.discordapp.net/attachments/1048419868157947955/1254850924279758960/image.png?ex=667afe7e&is=6679acfe&hm=79615a60443295b5a5b1e4752a222ac631d97d7bfd393066624b8015964149f3&=&format=webp&quality=lossless&width=825&height=465);
+
+  border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+}
+
+#app main .tattoo .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: .4rem;
+  z-index: 9999999999999;
+}
+
+#app main .tattoo.selected {
+  border-radius: 0.25rem;
+  /* border: 1px solid #ee313b;
+  background: linear-gradient(
+    180deg,
+    rgba(238, 49, 59, 0) 0%,
+    rgba(238, 49, 59, 0.35) 100%
+  ); */
+}
+
+#app main .tattoo.selected img {
+  display: block;
+}
+
+#app footer {
+  gap: 0.63rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#app footer button {
+  cursor: pointer;
+}
+
+#app footer button:hover {
+  transform: scale(1.02);
+  transition: 200ms;
+}
+
+#app footer button:nth-child(1) {
+  width: 24.25rem;
+  height: 2.875rem;
+  border-radius: 0.25rem;
+  border: 1px solid #840D0D;
+  background: linear-gradient(270deg, #840D0D 0%, #b10d25 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(179, 15, 35, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#app footer button:nth-child(2) {
+  width: 24.25rem;
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.29) 100%);
+  border: none;
+
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+#cams {
+  width: 15rem;
+  height: 3rem;
+
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+}
+
+#cams .icon {
+  width: 3.5rem;
+  height: 3rem;
+  border: 1px solid #840D0D;
+  background: linear-gradient(270deg, #840D0D 0%, #b10d25 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(179, 15, 35, 0.35);
+  border-radius: 0.375rem 0rem 0rem 0.375rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cams .icon img {
+  width: 1.75rem;
+  height: 1.25rem;
+}
+
+#cams .content {
+  width: 11.5rem;
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border: 1px solid #F00;
+  background: rgba(0, 0, 0, 0.71);
+}
+
+#cams .content svg {
+  cursor: pointer;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  width: 260px;
+  max-width: 260px;
+}
+
+.buttons > div:nth-child(1) {
+  width: 100%;
+  height: 42px;
+  flex-shrink: 0;
+
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.52) 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+}
+
+.buttons > div:nth-child(1) > span {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+
+  color: #fff;
+  font-family: 'Baloo 2';
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.buttons > div:nth-child(1) > input {
+  width: 10.25rem;
+  height: 0.625rem;
+  border-radius: 0.1875rem;
+  background: rgba(238, 49, 59, 0.25);
+
+  appearance: none;
+}
+
+.buttons > div:nth-child(1) > input::-webkit-slider-thumb {
+  width: 1.0625rem;
+  height: 1.125rem;
+  border-radius: 0.125rem;
+
+  appearance: none;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../icons/thumb.svg);
+
+  cursor: pointer;
+}
+
+.buttons > div:nth-child(2) {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+}
+
+.buttons > div:nth-child(2) > button:nth-child(1) {
+  height: 42px;
+  flex: 1;
+
+  flex-shrink: 0;
+
+  border-radius: 0.25rem;
+  background: #ee313b;
+  border: none;
+
+  padding-top: 8px;
+}
+
+.buttons > div:nth-child(2) > button:nth-child(2) {
+  width: 94px;
+  height: 46px;
+  flex-shrink: 0;
+
+  border-radius: 4px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.52) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cams .content svg.selected path {
+  fill: #ff0026;
+  fill-opacity: 1;
+}
+
+@media (max-width: 3440px) {
+  #app,
+  #cams {
+    zoom: 1.3;
+  }
+}
+
+@media (max-width: 2560px) {
+  #app,
+  #cams {
+    zoom: 0.9;
+  }
+}
+
+@media (max-width: 1600px) {
+  #app,
+  #cams {
+    zoom: 0.84;
+  }
+}
+
+@media (max-width: 1440px) {
+  #app,
+  #cams {
+    zoom: 0.84;
+  }
+}
+
+@media (max-width: 1366px) {
+  #app,
+  #cams {
+    zoom: 0.67;
+  }
+}
+
+@media (max-width: 1280px) {
+  #app,
+  #cams {
+    zoom: 0.65;
+  }
+}
+
+@media (max-width: 800px) {
+  #app,
+  #cams {
+    zoom: 0.45;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.375rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.125rem;
+  border: 1px solid #840D0D;
+  background: linear-gradient(270deg, #840D0D 0%, #B10D25 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(179, 15, 35, 0.35);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.125rem;
+  background: rgba(0, 0, 0, 0.35);
+}

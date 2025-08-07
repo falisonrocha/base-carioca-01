@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <title>pedrosilvx</title>
+</head>
+
+<body>
+  <div id="navbar-box">
+    <div class="selected">
+      <svg class="set-camera" data-value="1" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M17.4735 7.26141C16.8822 8.58943 14.5035 10.1984 11 10.1984C7.5185 10.1984 5.04213 8.60971 4.521 7.28313C1.89063 7.40768 0 9.06445 0 10.0492C0 11.6828 4.92387 14 11 14C17.0748 14 22 11.6828 22 10.0492C22 9.05142 20.1094 7.77987 17.4735 7.26141Z"
+          fill="white" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M13.8559 0C13.1464 0 11.6806 0.512672 11.0165 0.512672C10.3524 0.512672 8.88662 0 8.1785 0C6.64675 0 5.68974 1.98696 5.55637 2.74728L5.52887 6.26213C6.30162 6.99493 7.744 7.916 9.32524 8.05503C9.87525 8.10282 10.4555 8.13178 11.0591 8.13178C11.66 8.13178 12.2389 8.10282 12.7902 8.05503C14.3715 7.91455 15.642 7.10789 16.4587 6.28674L16.4519 2.79218C16.3336 2.00145 15.3739 0 13.8559 0Z"
+          fill="white" />
+      </svg>
+    </div>
+    <div>
+      <svg class="set-camera" data-value="2" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M9.64103 11.612C9.74097 10.4876 9.71349 9.5303 9.2143 8.64989C8.98495 8.24512 8.71961 7.85832 8.52073 7.43957C8.30174 6.97601 8.11459 6.4981 7.96059 6.00915C7.83467 5.60987 7.97158 5.32239 8.31487 5.09081C9.09987 4.56127 9.93085 4.12655 10.8688 3.94638C11.1703 3.89308 11.4775 3.87881 11.7827 3.90395C12.1764 3.9314 12.3128 4.16598 12.1974 4.54679C12.1445 4.72148 12.072 4.89017 12.0215 5.06536C11.6438 6.38697 12.3213 7.62873 13.686 8.12184C14.2087 8.311 14.7353 8.49217 15.2535 8.69131C15.3986 8.75392 15.5333 8.83806 15.6532 8.94086C16.031 9.24631 16.0835 9.4694 15.8911 9.9131C15.4664 10.8908 15.1071 11.888 14.9652 12.9521C14.7963 14.2153 15.0301 15.4122 15.5233 16.5761C15.7732 17.1655 15.983 17.7739 15.9191 18.4327C15.8591 19.0551 15.3634 19.5173 14.7583 19.4529C14.4697 19.425 14.1899 19.338 13.9363 19.1973C12.8235 18.5535 11.9746 17.6232 11.1816 16.627C9.97082 15.1057 9.62454 13.3424 9.64103 11.612ZM11.4014 10.5719L13.681 10.9712L13.9308 10.2171C13.0839 9.93956 12.2504 9.76288 11.3545 9.79183C11.3724 10.0868 11.3879 10.3498 11.4014 10.5719ZM13.3502 12.3826C13.3947 12.1406 13.4431 11.8761 13.4936 11.6001C12.789 11.3765 12.1035 11.2647 11.3804 11.336V12.1031L13.3502 12.3826ZM11.5863 13.6229L13.2438 13.8909V13.0589C12.6701 12.8518 11.8287 12.7595 11.4299 12.8638L11.5863 13.6229ZM13.2628 14.5797L11.8022 14.3162L11.7487 14.396L12.1045 15.209L13.4247 15.4845C13.3712 15.1726 13.3217 14.8966 13.2653 14.5797H13.2628Z"
+          fill="white"  />
+        <path
+          d="M4.48478 0C5.2478 0.0449189 5.91637 0.267016 6.55147 0.584942C6.93723 0.777595 7.308 1.00219 7.67377 1.23377C8.03954 1.46535 8.12599 1.74485 8.04354 2.17258C7.92212 2.80444 7.61831 3.35694 7.30851 3.90695C7.19008 4.11707 7.06416 4.3227 6.93274 4.52433C6.8855 4.60033 6.82181 4.6648 6.74636 4.71299C5.76448 5.28396 5.47415 6.01864 5.81444 7.10867C5.89339 7.36171 5.95884 7.63122 6.09826 7.85033C6.37658 8.28903 6.34811 8.74272 6.27166 9.21736C6.12425 10.1407 5.93037 11.0565 5.43118 11.8581C4.54324 13.2845 3.46442 14.5442 1.98336 15.3917C1.29029 15.788 0.34089 15.6947 0.121028 14.7519C0.0520872 14.452 0.056027 14.14 0.13252 13.842C0.309409 13.1932 0.554754 12.5678 0.769118 11.9315C1.15954 10.7999 1.20579 9.57812 0.90203 8.4203C0.695161 7.62174 0.389853 6.84514 0.102534 6.06705C-0.0683584 5.59939 -0.053868 5.36481 0.364369 5.08432C0.690163 4.86571 1.06393 4.71499 1.4307 4.56126C1.9039 4.36163 2.41658 4.24085 2.86229 3.99629C3.90864 3.42183 4.33138 2.19953 3.93163 1.07755C3.88416 0.944792 3.83169 0.81303 3.79422 0.678274C3.69428 0.322915 3.79771 0.144742 4.15799 0.0529074C4.26583 0.0291216 4.37494 0.0114556 4.48478 0ZM4.64668 5.90234C3.74025 5.92231 2.89778 6.04708 2.0668 6.35153C2.16224 6.62853 2.24969 6.88357 2.32114 7.09169L4.59621 6.7019C4.6107 6.47481 4.62719 6.21278 4.64668 5.90234ZM2.65043 8.50564L4.6172 8.23463V7.45354C3.88316 7.38516 3.19858 7.50795 2.49952 7.72555C2.55449 8.00804 2.60546 8.27256 2.65043 8.50564ZM2.75737 10.0159L4.41482 9.73991C4.46079 9.50733 4.51476 9.24431 4.57173 8.94835C3.95841 8.91457 3.34398 8.99046 2.75737 9.17244V10.0159ZM4.24842 10.518L4.19845 10.4387L2.72938 10.7087L2.57498 11.616L3.89914 11.328L4.24842 10.518Z"
+          fill="white"  />
+        <path
+          d="M7.06516 5.5944C7.06266 6.69741 7.56984 7.61625 8.13898 8.49417C8.68414 9.33515 8.88251 10.224 8.81405 11.2167C8.64366 13.6808 9.30375 15.8788 10.9772 17.7465C11.7367 18.5949 12.5392 19.381 13.5311 19.9699C13.2762 20.0483 12.9 19.9699 12.5677 19.7758C11.9214 19.3946 11.3339 18.9217 10.8238 18.3718C10.0693 17.5733 9.34323 16.7448 8.9075 15.7171C8.35785 14.4195 8.16847 13.0604 8.29539 11.6664C8.39532 10.5629 8.11049 9.5817 7.52336 8.66286C7.1426 8.06694 6.79883 7.45105 6.60895 6.76129C6.44455 6.16636 6.57047 5.82199 7.06516 5.5944Z"
+          fill="white"  />
+        <path
+          d="M7.07915 9.64708C7.37296 10.243 7.50587 10.7566 7.2975 11.3585C6.89526 12.5219 6.15172 13.4482 5.34873 14.3376C4.77759 14.969 4.1365 15.5225 3.39047 15.9442C3.11913 16.1008 2.80626 16.1704 2.49403 16.1439C4.75561 14.5133 6.57696 12.5858 7.07915 9.64708Z"
+          fill="white"  />
+        <path
+          d="M8.24242 4.12006C8.25053 4.04973 8.26731 3.98066 8.29238 3.91444C8.64216 3.23366 8.95197 2.54091 8.93098 1.74785C9.39519 1.91804 9.54959 2.27939 9.41067 2.84586C9.40718 2.86183 9.39669 2.87631 9.39419 2.89228C9.30925 3.3799 9.08787 3.75423 8.58369 3.91543C8.46027 3.95486 8.35334 4.0452 8.23891 4.11208L8.24242 4.12006Z"
+          fill="white" />
+        <path d="M8.23791 4.11357H8.22392L8.24192 4.12106L8.23791 4.11357Z" fill="white" />
+      </svg>
+    </div>
+    <div>
+      <svg class="set-camera" data-value="3" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.64981 0.800111C4.12814 0.300639 4.77689 0.0200402 5.45335 0.0200402C6.12398 0.0200402 7.10898 -0.174889 7.40991 0.651142C7.65417 1.32159 8.27515 1.79559 9.00003 1.79559C9.72491 1.79559 10.3458 1.32159 10.5901 0.651142C10.891 -0.174889 11.876 0.0200402 12.5466 0.0200402C13.2231 0.0200402 13.8719 0.300639 14.3502 0.800111L17.502 4.09119C18.166 4.78459 18.166 5.90881 17.502 6.60218L16.2457 7.91396C15.8034 8.37587 15.1862 8.52573 14.6301 8.38102L14.861 13.2037C14.9339 14.7249 13.7724 16 12.3137 16H5.68636C4.22769 16 3.06611 14.725 3.13895 13.2037L3.36988 8.38102C2.81375 8.52573 2.1966 8.37587 1.75428 7.91396L0.498035 6.60218C-0.166012 5.90881 -0.166012 4.78459 0.498035 4.09119L3.64981 0.800111Z"
+          fill="white" />
+      </svg>
+    </div>
+  </div>
+  <div id="root">
+    <header></header>
+    <main>
+      <div class="categories">
+        <button class="selected" onclick="app.setOption(this, 'clothes')">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.83169 3.33333V9.16667L9.99835 7.08333L14.165 9.16667V3.33333H16.665C16.886 3.33333 17.098 3.42113 17.2543 3.57741C17.4106 3.73369 17.4984 3.94565 17.4984 4.16667V17.5C17.4984 17.721 17.4106 17.933 17.2543 18.0893C17.098 18.2455 16.886 18.3333 16.665 18.3333H3.33169C3.11067 18.3333 2.89871 18.2455 2.74243 18.0893C2.58615 17.933 2.49835 17.721 2.49835 17.5V4.16667C2.49835 3.94565 2.58615 3.73369 2.74243 3.57741C2.89871 3.42113 3.11067 3.33333 3.33169 3.33333H5.83169ZM9.99835 6.66667L6.24835 2.5H13.7484L9.99835 6.66667ZM10.8317 9.36333L9.99835 8.94667L9.16502 9.36333V16.6667H10.8317V9.36333ZM12.4984 11.6667V13.3333H15.8317V11.6667H12.4984Z"
+              fill="white" />
+          </svg>
+        </button>
+        <button onclick="app.setOption(this, 'utils')">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.96499 17.3971V16.4825H4.62634V14.4189H2.96817V12.8618H4.66123C4.64401 12.1513 4.70246 11.4784 4.62453 10.7932H2.96771V9.05341C3.5005 8.84372 3.97621 8.53582 4.34907 8.10227C4.87099 7.4959 5.10929 6.79134 5.09298 6.01473C5.06761 4.83631 5.02638 3.65617 4.9924 2.47946C4.98659 2.39772 5.00086 2.31582 5.03409 2.24018L7.04383 4.57043L8.3971 3.52452L6.33887 1.11793L6.4825 1C6.50885 1.01677 6.53369 1.03556 6.5568 1.05618C7.4629 2.02791 8.57197 2.66043 9.92886 2.87055C10.1404 2.90314 10.376 2.85383 10.5908 2.80366C11.7234 2.54079 12.6748 1.98888 13.4645 1.1814C13.4998 1.14538 13.5297 1.10421 13.5651 1.06175L13.7948 1.22556L11.6835 3.68705L13.0377 4.73081L15.1245 2.31222C15.1245 2.61798 15.1299 2.88428 15.1245 3.15015C15.0996 4.12145 15.0411 5.09318 15.0502 6.06619C15.0629 7.42987 15.7402 8.41489 17.0513 8.99852C17.0921 9.01653 17.1315 9.03669 17.1795 9.05985V10.7902H15.5241C15.4162 11.4596 15.4955 12.1165 15.4611 12.8134C15.5744 12.8353 15.6835 12.8739 15.7936 12.8756C16.2467 12.8824 16.6997 12.8786 17.1696 12.8786V14.4125H15.4969C15.4602 15.1046 15.4833 15.7667 15.4819 16.4687H17.1723V17.4001C12.4406 19.5343 7.70483 19.5333 2.96499 17.3971ZM14.0648 11.4677C13.7662 11.3734 6.57402 11.3991 6.42496 11.484V15.2616H14.0661L14.0648 11.4677Z"
+              fill="white" />
+            <path d="M4.36085 14.6942V16.2093H2.00044V14.6942H4.36085Z" fill="white" />
+            <path d="M2 12.5925V11.0964H4.35813V12.5925H2Z" fill="white" />
+            <path d="M15.7837 16.2114V14.6908H17.9955V16.2114H15.7837Z" fill="white" />
+            <path d="M18 12.5913H15.7882V11.0959H18V12.5913Z" fill="white" />
+            <path d="M5.31045 2.1304L6.22969 1.42111L8.00113 3.47949L7.08234 4.19006L5.31045 2.1304Z" fill="white" />
+            <path d="M13.8532 1.58321L14.7729 2.29249L13.0037 4.35559L12.0827 3.64674L13.8532 1.58321Z" fill="white" />
+            <path d="M6.69498 15.0249V11.704H13.7929V15.0249H6.69498Z" fill="white" />
+          </svg>
+        </button>
+      </div>
+      <hr>
+      <div class="items">
+        <section style="display: none;" id="utils">
+          <div class="item" data-type="mask">
+            <div class="head">MÁSCARA</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="bracelet">
+            <div class="head">BRACELETE</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="watch">
+            <div class="head">RELÓGIO</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="ear">
+            <div class="head">ORELHA</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="decals">
+            <div class="head">ADESIVO</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="glass">
+            <div class="head">ÓCULOS</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="clothes">
+          <div class="item" data-type="arms">
+            <div class="head">MÃOS</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="hat">
+            <div class="head">CHAPÉU</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="tshirt">
+            <div class="head">CAMISA</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="torso">
+            <div class="head">JAQUETA</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="vest">
+            <div class="head">COLETE</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="accessory">
+            <div class="head">ACESSÓRIOS</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="pants">
+            <div class="head">CALÇAS</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="backpack">
+            <div class="head">MOCHILA</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-type="shoes">
+            <div class="head">SAPATOS</div>
+            <div class="content">
+              <div class="option">
+                <p class="item-text-value">MODELOS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'models')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'models')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="option texture">
+                <p class="item-text-value">TEXTURAS</p>
+                <div>
+                  <div onclick="app.updateValue(this, 'left', 'texture')" class="item-arrow arrow-left">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                  <input id="texture" type="number" value="0" min="-1" />
+                  <div onclick="app.updateValue(this, 'right', 'texture')" class="item-arrow">
+                    <img src="./assets/icons/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="buttons">
+    <div>
+      <span>
+        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.4688 6.87501C12.3107 5.66922 11.7186 4.56237 10.8033 3.76165C9.88804 2.96092 8.7123 2.52123 7.49621 2.52486C6.28011 2.5285 5.10703 2.97522 4.19655 3.7814C3.28606 4.58758 2.70061 5.69796 2.54977 6.90467C2.39893 8.11138 2.69305 9.3317 3.37707 10.3372C4.06109 11.3427 5.08812 12.0644 6.2659 12.3673C7.44369 12.6702 8.69148 12.5334 9.7757 11.9826C10.8599 11.4318 11.7063 10.5048 12.1563 9.37501M12.4688 12.5V9.37501H9.34375" stroke="rgba(255, 0, 0, 1)" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>0º</p>
+      </span>
+      <input
+        type="range"
+        step="1"
+        min="0"
+        max="360"
+        value="0"
+        class="slider"
+        id="myRange"
+        oninput="app.rotate(this)"
+      />
+    </div>
+    <div>
+      <button onclick="app.close()">Salvar</button>
+      <button onclick="app.resetOutfit()">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="white" fill-opacity="0.45"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

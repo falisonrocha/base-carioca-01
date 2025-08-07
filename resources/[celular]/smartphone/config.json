@@ -1,0 +1,53 @@
+{
+    "token": "ScR",
+    "client": {
+        "bankType": "fleeca",
+        "uploadServer": "https://discord.com/api/webhooks/1204497135035224084/8Ki4ZectaJE7zhXhvyNTQXmO1ushj6salQ1chl-6kAUM1QJHuM7Ph6hp__ycBvY4LA7K",
+        "allowUnsafeURL": true,
+        "videoServer": "ws://localhost:8080/",
+        "case": "iphone14pro",
+        "isAndroid": true,
+        "useGameClock": false,
+        "phone_template": "XXX-XXX",
+        "backgroundURL": "http://212.18.114.14/img/fluxos.png",
+        "db_driver": "oxmysql",
+        "disabledApps": [
+            "paypal",
+            "ifood"
+        ]
+    },
+    "call_mode": "pma-voice",
+    "webhookURL": "https://discord.com/api/webhooks/1204497178710515743/MEgIrPTrG5zFwKYPKC9c-q3IQMIdQt7xXRpAiQnuKgp4G-EFAyCd0pEW6Evy4q5BZPSB",
+    "instagram_verify": "Admin",
+    "weazel_tags": "Admin",
+    "instagram_accounts": {
+        "*": 1,
+        "Admin": 2
+    },
+    "moderator": "Admin",
+    "item": "celular",
+    "services": [
+        {
+            "name": "Policia",
+            "number": "190",
+            "permission": "Police"
+        },
+        {
+            "name": "Paramédico",
+            "number": "192",
+            "permission": "Paramedic"
+        },
+        {
+            "name": "Mecânico",
+            "number": "('9) 99946-9929')",
+            "permission": "Mechanic"
+        },
+        {
+            "name": "Prefeitura",
+            "number": "4002-8922",
+            "permission": "Admin"
+        }
+    ],
+    "base": "vrpex",
+    "channel": "stable"
+}

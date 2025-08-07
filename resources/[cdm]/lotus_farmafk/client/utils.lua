@@ -1,0 +1,23 @@
+function drawTxt(text,font,x,y,scale,r,g,b,a)
+    SetTextFont(font)
+    SetTextScale(scale,scale)
+    SetTextColour(r,g,b,a)
+    SetTextOutline()
+    SetTextCentre(1)
+    SetTextEntry("STRING")
+    AddTextComponentString(text)
+    DrawText(x,y)
+end
+
+DrawText3D = function(x,y,z, text)
+    SetDrawOrigin(x,y,z)
+    SetTextScale(0.35, 0.35)
+    SetTextColour(255, 255, 255, 255)
+    SetTextFont(4)
+    SetTextEntry('STRING')
+    SetTextCentre(1)
+    AddTextComponentString(text)
+    DrawText(0.0, 0.0)
+    DrawRect(0.0, 0.0125, 0.015 + text:gsub('~.-~', ''):len() / 370, 0.03, 45, 45, 45, 150)
+    ClearDrawOrigin()
+end

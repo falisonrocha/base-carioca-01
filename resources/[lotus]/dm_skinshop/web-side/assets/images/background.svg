@@ -1,0 +1,29 @@
+<svg width="481" height="746" viewBox="0 0 481 746" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1244_1880)">
+<mask id="path-1-inside-1_1244_1880" fill="white">
+<path d="M0 10C0 4.47717 4.47715 0 10 0H471C476.523 0 481 4.47715 481 10V736C481 741.523 476.523 746 471 746H10C4.47716 746 0 741.523 0 736V10Z"/>
+</mask>
+<path d="M0 10C0 4.47717 4.47715 0 10 0H471C476.523 0 481 4.47715 481 10V736C481 741.523 476.523 746 471 746H10C4.47716 746 0 741.523 0 736V10Z" fill="#0F0C13"/>
+<path d="M0 10C0 4.47717 4.47715 0 10 0H471C476.523 0 481 4.47715 481 10V736C481 741.523 476.523 746 471 746H10C4.47716 746 0 741.523 0 736V10Z" fill="url(#paint0_radial_1244_1880)"/>
+<rect width="403" height="667" transform="translate(0 113.472)" fill="url(#paint1_linear_1244_1880)"/>
+</g>
+<path d="M0 10C0 3.92487 4.92487 -1 11 -1H471C477.075 -1 482 3.92487 482 10H480C480 5.02944 475.971 1 471 1H10C4.47715 1 0 5.02944 0 10ZM481 746H0H481ZM0 746V0V746ZM471 -1C477.075 -1 482 3.92487 482 10V735C482 741.075 477.075 746 471 746C475.971 746 480 741.523 480 736V10C480 5.02944 475.971 1 471 1V-1Z" fill="url(#paint2_radial_1244_1880)" mask="url(#path-1-inside-1_1244_1880)"/>
+<defs>
+<radialGradient id="paint0_radial_1244_1880" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(79.5 -43) rotate(90) scale(256 258.147)">
+<stop stop-color="#AB65FF"/>
+<stop offset="1" stop-color="#0F0C13" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_1244_1880" x1="201.5" y1="0" x2="201.5" y2="667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#231D2B" stop-opacity="0"/>
+<stop offset="1" stop-color="#231D2B"/>
+</linearGradient>
+<radialGradient id="paint2_radial_1244_1880" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(481 238) rotate(179.656) scale(832.746 529.281)">
+<stop stop-color="#AB65FF"/>
+<stop offset="0.762864" stop-color="#AB65FF" stop-opacity="0.237136"/>
+<stop offset="1" stop-color="#AB65FF" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_1244_1880">
+<path d="M0 10C0 4.47717 4.47715 0 10 0H471C476.523 0 481 4.47715 481 10V736C481 741.523 476.523 746 471 746H10C4.47716 746 0 741.523 0 736V10Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

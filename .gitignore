@@ -1,0 +1,36 @@
+cache/
+**/stream_cache/
+*.rpf
+*.rpf.db
+*.sfl
+*.sfl.db
+*.ytd
+*.yft
+*.awc
+*.ydr
+*.ybn
+# Ignorar pastas temporárias
+cache/
+**/stream_cache/
+
+# Ignorar arquivos inúteis ou locais
+*.log
+.replxx_history
+*.db
+*.ini
+.DS_Store
+Thumbs.db
+
+# Ignorar pastas comuns em servidores
+__pycache__/
+node_modules/
+.vscode/
+.env
+
+# Ignorar pastas que não precisam ir pro Git
+*.bak
+*.tmp
+
+# Ignorar logs e pastas que mudam toda hora
+logs/
+*.log
