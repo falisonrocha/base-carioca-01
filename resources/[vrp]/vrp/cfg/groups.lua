@@ -151,8 +151,24 @@ cfg.groups = {
 ["Rocam"] = { _config = { gtype = "org", salario = 17000, ptr = true, orgName = "Policia" }, "perm.rocam", "perm.policia", "player.blips", "perm.disparo", "perm.portasolicia", "perm.algemar", "perm.countpolicia"  },
 ["Comando Grpae"] = { _config = { gtype = "org", salario = 17000, ptr = true, orgName = "Policia" }, "perm.grpae", "perm.policia", "player.blips", "perm.disparo", "perm.portasolicia", "perm.algemar", "perm.countpolicia" },
 ["Grpae"] = { _config = { gtype = "org", salario = 17000, ptr = true, orgName = "Policia" }, "perm.grpae", "perm.policia", "player.blips", "perm.disparo", "perm.portasolicia", "perm.algemar", "perm.countpolicia"  },
-["Comando Choque"] = { _config = { gtype = "org", salario = 17000, ptr = true, orgName = "Choque" }, "perm.choque", "perm.policia", "player.blips", "perm.disparo", "perm.portasolicia", "perm.algemar", "perm.countpolicia"  },
-["Choque"] = { _config = { gtype = "org", salario = 17000, ptr = true, orgName = "Choque" }, "perm.choque", "perm.policia", "player.blips", "perm.disparo", "perm.portasolicia", "perm.algemar", "perm.countpolicia"  },
+
+
+-- POLÍCIA — CHOQUE (corrigido p/ bater com o ponto)
+["Comando Choque"] = {
+  _config = { gtype = "org", salario = 17000, ptr = true, orgName = "Choque" },
+  "perm.choque", "choque.permissao",           -- << ambas as chaves aceitas
+  "perm.policia", "player.blips", "perm.disparo",
+  "perm.portasolicia", "perm.algemar", "perm.countpolicia"
+},
+
+["Choque"] = {
+  _config = { gtype = "org", salario = 17000, ptr = true, orgName = "Choque" },
+  "perm.choque", "choque.permissao",           -- << ambas as chaves aceitas
+  "perm.policia", "player.blips", "perm.disparo",
+  "perm.portasolicia", "perm.algemar", "perm.countpolicia"
+},
+
+
 
 ["Capitao"] = { _config = { gtype = "org", salario = 16000, ptr = true , orgName = "Policia"}, "perm.policia", "player.blips", "perm.disparo", "perm.portasolicia", "perm.algemar", "perm.countpolicia"  },
 ["Primeiro Tenente"] = { _config = { gtype = "org", salario = 15000, ptr = true, orgName = "Policia" }, "perm.policia", "player.blips", "perm.disparo", "perm.portasolicia", "perm.algemar", "perm.countpolicia"  },

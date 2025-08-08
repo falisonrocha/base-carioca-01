@@ -1,38 +1,25 @@
-shared_script '@likizao_ac/client/library.lua'
+fx_version 'cerulean'
+lua54 'yes'
+game 'gta5'
 
---[[ @likizao ]]--
+name 'lotus_ponto'
+author 'likizao'
 
-fx_version   'cerulean'
-lua54        'yes'
-game         'gta5'
-
---[[ Resource Information ]]--
-name         'lotus_ponto'
-author       'likizao'
-
---[[ Manifest ]]--
 dependencies {
-    '/server:5181',
-    '/onesync',
-    'vrp',
+  '/server:5181',
+  '/onesync',
+  'vrp',
 }
 
 shared_scripts {
-    '@vrp/lib/utils.lua',
-    'shared/**'
-}
-
-server_scripts {
-    "server/server.lua",
+  '@vrp/lib/utils.lua',
+  'shared/*.lua'
 }
 
 client_scripts {
-    "client/utils.lua",
-    "client/client.lua",
+  'client/utils.lua',
+  'client/client.lua'
 }
 
 ui_page 'build/index.html'
-
-files {
-    'build/**'
-}
+files { 'build/***' }

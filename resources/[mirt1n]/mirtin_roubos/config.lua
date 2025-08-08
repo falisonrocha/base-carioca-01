@@ -2,22 +2,65 @@ cfg = {}
 
 cfg.roubos = {
     ["Loja"] = {
-        pmPTR = 10,
+        pmPTR = 0,
         tempo = 350,
         cooldown = 500,
         minValue = 571,
         maxValue = 571,
-        itens = { },
+        itens = {"dirty", chance = 100, min = 250, max = 600 },
         permiss = "perm.ilegal",
     },
 
+
+
+
+
+
+
+
+
+    ["Loja"] = {
+    pmPTR = 0,
+    tempo = 350,
+    cooldown = 500,
+    minValue = 571,
+    maxValue = 571,
+    itens = {
+        { item = "dirty", chance = 100, min = 250, max = 600 }
+    },
+    permiss = "perm.ilegal",
+},
+
+["Bebidas"] = {
+    pmPTR = 0,
+    tempo = 350,
+    cooldown = 500,
+    minValue = 571,
+    maxValue = 571,
+    itens = {
+        { item = "dirty", chance = 100, min = 250, max = 600 }
+    },
+    permiss = "perm.ilegal",
+},
+
+
+
+
+
+
+
+
+
+
+
+
     ["Bebidas"] = {
-        pmPTR = 10,
+        pmPTR = 0,
         tempo = 350,
         cooldown = 500,
         minValue = 571,
         maxValue = 571,
-        itens = { },
+        itens = { item = "dirty", chance = 100, min = 250, max = 600 },
         permiss = "perm.ilegal",
     },
 
@@ -224,7 +267,7 @@ cfg.roubos = {
     },
 
     ["Registradora"] = {
-        pmPTR = 2,
+        pmPTR = 0,
         cooldown = 400,
 
         tempo = 15,
@@ -238,7 +281,7 @@ cfg.roubos = {
     },
 
     ["Ammunation"] = {
-        pmPTR = 2,
+        pmPTR = 0,
         cooldown = 500,
 
         tempo = 120,
